@@ -15,6 +15,6 @@ import java.util.List;
 public interface PersonService {
     Person findById(Long id) throws ObjectNotFoundException;
     List<Person> findAll();
-
-    Person create(PersonDTO pessoa);
+    Person create(PersonDTO pessoaCreate);
+    Person update(PersonDTO pessoaUpdate);
 }
