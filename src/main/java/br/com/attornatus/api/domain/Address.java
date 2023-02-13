@@ -21,7 +21,7 @@ import java.util.ListIterator;
 @Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "enderecos")
+@Table(name = "enderecos_tbl")
 
 public class Address {
     @Id
