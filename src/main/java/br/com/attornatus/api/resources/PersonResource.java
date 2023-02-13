@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
  */
 
 @RestController
-@RequestMapping(value = "/pessoa")
+@RequestMapping(value = "/pessoas")
 public class PersonResource {
 
     @Autowired

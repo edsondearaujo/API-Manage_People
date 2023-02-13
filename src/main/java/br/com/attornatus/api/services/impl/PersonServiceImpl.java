@@ -33,7 +33,7 @@ public class PersonServiceImpl implements PersonService {
     @Override
     public Person findById(Long id) throws ObjectNotFoundException {
         Optional<Person> idPessoa = repository.findById(id);
-        return idPessoa.orElseThrow(()-> new ObjectNotFoundException("Pessoa não encontrada pelo id -> " + id)) ;
+        return idPessoa.orElseThrow(()-> new ObjectNotFoundException("Objeto não encontrado")) ;
     }
 
     public List<Person> findAll() {
