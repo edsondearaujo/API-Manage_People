@@ -8,14 +8,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.modelmapper.ModelMapper;
 
 import java.util.List;
 import java.util.Optional;
-
-import static net.bytebuddy.matcher.ElementMatchers.any;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.when;
@@ -61,19 +58,6 @@ class PersonServiceImplTest {
         assertEquals(DATA_NASCIMENTO, response.getDataNascimento());
 
     }
-
-
-    /*@Test
-    void QuandoBuscarPorIdRetorneObjectoNaoEncontrado() {
-        when(repository.findById(anyLong())).thenThrow(new ObjectNotFoundException("Objeto não encontrado"));
-
-        try{
-            service.findById(ID);
-        }catch (Exception ex) {
-            assertEquals(ObjectNotFoundException.class, ex.getClass());
-            assertEquals("Objeto não encontrado", ex.getMessage());
-        }
-    }*/
 
     @Test
     void QuandoBuscarTodosRetorneUmaListaDePessoas() {
